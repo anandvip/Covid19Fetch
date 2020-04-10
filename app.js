@@ -29,7 +29,7 @@ function fetchData() {
                 return report.textContent = `Confirmed : ${data[0].confirmed}`,
                 recoverd.textContent = `Recovered : ${data[0].recovered}`,
                 active.textContent = `Active : ${data[0].active}`,
-                    done.textContent = `Dead: ${data[0].deaths}`  
+                done.textContent = `Dead: ${data[0].deaths}`  
             })
 }
 // refresh.addEventListener('click', fetchData)
@@ -68,6 +68,4 @@ function fetchDataDE() {
             })
 }
 
-refreshDE.addEventListener('click', () => {
-    return fetchDataDE(), fetchDataUS(), fetchData()
-})
+refreshDE.addEventListener('click', fetchDataDE, fetchDataUS, fetchData)
