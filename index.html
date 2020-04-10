@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--<link rel="stylesheet" href="style.css">-->
+    <title>Covid19 Update</title>
+  </head>
+  <body>
+    <header>
+      <!-- <lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_1KyL2Q.json"  background="transparent"  speed="1"  style="width: 250px; height: 250px;"  loop autoplay >
+      </lottie-player>// -->
+      <!-- <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_tJTMQ4.json"  background="transparent"  speed="0.5"  style="width: 250px; height: 250px;"  loop autoplay >
+      </lottie-player>// https://assets1.lottiefiles.com/private_files/lf30_1KyL2Q.json -->
+      <lottie-player class="lottie"
+    src="https://assets1.lottiefiles.com/private_files/lf30_Rq4Htd.json"  background="transparent"  speed="0.5"  style="width: 250px; height: 250px;"  loop  autoplay >
+</lottie-player>
+    </header>
+
+    <section>
+      <div id="ind">
+        <h1><span class="country">India</span></h1>
+        <p id="covid"></p>
+        <p id="recoverd"></p>
+        <p id="actv"></p>
+        <p id="done"></p>
+        <!-- <button id="refresh">Update</button> -->
+      </div>
+      <!--US-->
+      <div id="us">
+        <h1><span class="country">USA</span></h1>
+        <p id="province"></p>
+        <p id="covidUS"></p>
+        <p id="recoverdUS"></p>
+        <p id="doneUS"></p>
+        <!-- <button id="refreshUS">Update</button> -->
+      </div>
+      <!--DE-->
+      <div id="de">
+        <h1><span class="country">Germany</span></h1>
+        <p id="covidDE"></p>
+        <p id="recoverdDE"></p>
+        <p id="actvDE"></p>
+        <p id="doneDE"></p>
+        <button id="refreshDE">Update</button>
+      </div>
+    </section>
+    <p id="upd"></p>
+    <footer class="hide">
+      रूनान बंधन | Visit Isha Foundation | Inner Engineering
+    </footer>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </body>
+</html>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Fira Sans", sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(
+      to right top,
+      #051937,
+      #562b5d,
+      #a93961,
+      #e26445,
+      #ebab12
+    );
+  }
+  /*This gradient was created @ https://mycolor.space/gradient?ori=to+right+top&hex=%23051937&hex2=%23EBAB12&sub=1 */
+  section{
+    border: rgb(156, 55, 96) 1px solid;
+    border-radius: 5px;
+    padding: 10px 50px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap: 30px;
+  }
+  p {
+    font-size: 1em;
+    font-family: monospace;
+    font-weight: 100;
+    padding-left: 5px;
+    color: rgb(255, 255, 255);
+  }
+  /* #covid{
+    color: rgb(101, 30, 152);
+  }
+  #done{
+    color: rgb(9, 41, 171);
+  }
+  #recoverd{
+    color:green
+  } */
+  /*Button*/
+  #refresh,
+  #refreshUS,
+  #refreshDE {
+    background-color: #4b0082;
+    color: #a880c4;
+    padding: 10px 20px;
+    border: 0;
+    border-style: none;
+    outline: none;
+    font-weight: 700;
+    border-radius: 3px;
+  }
+  #refresh:hover,
+  #refreshUS:hover,
+  #refreshDE:hover {
+    color: ivory;
+  }
+  #refresh:active,
+  #refreshUS:active,
+  #refreshDE:active {
+    background-color: slateblue;
+  }
+  #us {
+    display: block;
+  }
+  .country {
+    padding: 5px 10px;
+    background-color: slateblue;
+    color: snow;
+    border-radius: 5px;
+  }
+  footer {
+    color: #e26445;
+  }
+  #ind,
+  #us {
+    border-right: rgb(156, 55, 96) 1px solid;
+    padding-right: 20px;
+  }
+  .hide {
+    display: none;
+  }
+  .lottie::before{
+    content: 'Covid19-Daily';
+    font-size: 2em;
+    color: coral;
+    margin-left: 15%;
+  }
+</style>
