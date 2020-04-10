@@ -68,4 +68,6 @@ function fetchDataDE() {
             })
 }
 
-refreshDE.addEventListener('click', fetchDataDE, fetchDataUS, fetchData)
+refreshDE.addEventListener('click', () => {
+    return fetchDataDE(), fetchDataUS(), fetchData()
+})
