@@ -71,3 +71,5 @@ function fetchDataDE() {
 refreshDE.addEventListener('click', () => {
     return fetchDataDE(), fetchDataUS(), fetchData()
 })
+
+//TODO: https://sutanlab.id/blog/mengenal-higher-order-function-di-javascript-part-2/
