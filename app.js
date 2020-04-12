@@ -68,7 +68,8 @@ function fetchDataDE() {
             })
 }
 
-refreshDE.addEventListener('click', () => {
+refreshDE.addEventListener('click', (e) => {
+    e.preventDefault();
     return fetchDataDE(), fetchDataUS(), fetchData()
 })
 
