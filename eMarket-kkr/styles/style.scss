@@ -7,7 +7,9 @@ $darkBG-Font:azure;
 @import "loc";
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;600&display=swap');
 @import "content";
-
+*{
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     padding: 0;
@@ -36,7 +38,6 @@ body {
         // border: 1px solid $primary;
         border-radius: 2px;
         height: 100vh;
-        overflow: hidden;
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 10px;

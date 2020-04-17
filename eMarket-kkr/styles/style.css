@@ -61,6 +61,11 @@
   display: block;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -92,7 +97,6 @@ body header {
   width: 100vw;
   border-radius: 2px;
   height: 100vh;
-  overflow: hidden;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
