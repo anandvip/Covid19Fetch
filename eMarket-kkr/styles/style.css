@@ -54,7 +54,11 @@
 }
 
 .hide {
-  visibility: hidden;
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 body {
@@ -84,9 +88,9 @@ body header {
 }
 
 .main .app {
-  width: 360px;
+  width: 100vw;
   border-radius: 2px;
-  height: 700px;
+  height: 100vh;
   overflow: hidden;
   display: -ms-grid;
   display: grid;

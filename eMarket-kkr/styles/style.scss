@@ -31,10 +31,10 @@ body {
     justify-items: center;
 
     .app {
-        width: 360px;
+        width: 100vw;
         // border: 1px solid $primary;
         border-radius: 2px;
-        height: 700px;
+        height: 100vh;
         overflow: hidden;
         display: grid;
         grid-template-columns: 1fr;
